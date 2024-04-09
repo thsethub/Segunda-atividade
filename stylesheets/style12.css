@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+  }
+
+  .login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: descerCentro 2s linear forwards;
+  }
+  .login-container a{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 200px;
+  }
+
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"]{
+    width: 290px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .login-container button{
+    margin-left: 8px;
+    width: 290px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .login-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+@keyframes descerCentro {
+  from{
+    position: absolute;
+    bottom: 100%;
+  }
+  to{
+    position: absolute;
+    bottom: 30%;
+  }
+}

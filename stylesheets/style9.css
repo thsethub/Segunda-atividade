@@ -1,0 +1,30 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a{
+    position: absolute;
+    margin-top: 300px;
+}
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 100px;
+    border: solid;
+    animation: pulse 5s linear infinite;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}

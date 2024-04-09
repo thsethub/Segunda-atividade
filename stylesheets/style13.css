@@ -1,0 +1,34 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a{
+    position: absolute;
+    margin-top: 300px;
+}
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: solid;
+    margin: 10px;
+    animation: moveUpDown 4s infinite alternate ease-in-out;
+}
+.block:nth-child(2){
+    animation-delay: 2s;
+}
+.block:nth-child(3){
+    animation-delay: 4s;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0); 
+    }
+    100% {
+      transform: translateY(-100px);
+    }
+}

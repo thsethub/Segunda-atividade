@@ -1,0 +1,30 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a{
+    position: absolute;
+    margin-top: 250px;
+}
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 100px;
+    border: solid;
+}
+.block:hover{
+    animation: cores 3s infinite;
+    transition: 5s;
+}
+@keyframes cores {
+    0%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: rgb(0, 255, 255);
+    }
+}

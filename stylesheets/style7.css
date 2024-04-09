@@ -1,0 +1,35 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a{
+    position: absolute;
+    margin-top: 300px;
+}
+.block{
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: solid;
+    animation: modificacao 5s linear forwards;
+}
+
+@keyframes modificacao {
+    0%{
+        width: 0px;
+        height: 0px;
+        background-color: blue;
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+}

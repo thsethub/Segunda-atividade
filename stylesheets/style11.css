@@ -1,0 +1,44 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a{
+    position: absolute;
+    margin-top: 320px;
+}
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: solid;
+    animation: pulse 5s linear infinite, girar 5s linear infinite;
+}
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes pulse {
+    0%{
+        width: 200px;
+        height: 200px;
+        transform: scale(0);
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+        transform: scale(1.0);
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        transform: scale(0);
+    }
+}

@@ -1,0 +1,29 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a{
+    position: absolute;
+    margin-top: 300px;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    animation: move 5s linear forwards;
+}
+@keyframes move {
+    0%{
+        width: 200px;
+        height: 200px;
+        transform: translate(0,0);
+    }
+    /* Coloquei 100px pq a logo ficou pequena */
+    100%{
+        width: 100px;
+        height: 100px;
+        transform: translate(-45vw, -40vh);
+    }
+}
